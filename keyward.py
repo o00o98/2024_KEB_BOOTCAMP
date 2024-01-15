@@ -62,3 +62,32 @@ print('밑은 {}, 지수는 {}, 결과값은 {}'.format(base_num,exponent_num, p
 # c like
 print('밑은 %d, 지수는 %d, 결과 값은 %d' %(base_num, exponent_num, pow(base_num, exponent_num)))
 # d : 십진수를 의미, f로 쓰면 float을 의미함
+
+#divmod(a,b)=> a//b a%b가
+first_num=int(input("First number : "))
+second_num=int(input("Second number : "))
+
+qoutient = first_num//second_num
+remainder = first_num%second_num
+print(f'몫은 {qoutient} 나머지는 {remainder}입니다.')
+print(f'몫은 {divmod(first_num, second_num)[0]} 나머지는 {divmod(first_num, second_num)[1]}입니다')
+
+
+# 거듭제곱 a**b = a의 b제곱
+print(2**3)
+print(2.0**3)
+#실수가 더 상위개념이기 때문에 실수의 결과값이 생김
+#음수의 거듭제곱
+# -5**2 : 연산자 우선순위는 -가 아닌 **에 있기 때문에 -5**2의 결과는 -25가 됨
+# (-5)**2 : (-2)를 밑으로 제곱한 결과인 25가 나옴
+
+decn = 65
+octn = 59
+hexn = 49
+print(f'65는 십진수로 {decn}, 이진수로 {bin(decn)}, 십육진수로 {hex(decn)}, 아스키코드는 {chr(decn)}')
+print(f'59는 십진수로 {octn}, 이진수로 {bin(octn)}, 십육진수로 {hex(octn)}, 아스키코드는 {chr(decn)}')
+print(f'49는 십진수로 {hexn}, 이진수로 {bin(hexn)}, 십육진수로 {hex(hexn)}, 아스키코드는 {chr(hexn)}')
+print(0b1001, 0o1001, 0x1001)
+# 아라비안 숫자는 48부터 시작함
+
+
