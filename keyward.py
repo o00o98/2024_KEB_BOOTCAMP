@@ -43,3 +43,22 @@ print(bool(5))
 # 1/ 000/ 000의 값을 가지는 튜플로 생각하기 때문에 1,0,0의 값을 갖는 튜플로 인식함
 
 print(1,000,000)
+
+# / : floating division으로 결과값이 floating 이 됨
+# // : truncating는 int division으로 결과값이 몫에 해당하는 int가 됨
+# % : module연산으로 나머지가 나옴
+
+base_num=int(input('intput base number : '))
+exponent_num=int(input('input exponent num : '))
+print(f'밑은 {base_num}, 지수는 {exponent_num}, 결과값은 {base_num**exponent_num}')
+#stirng 앞에 f를 쓴 f' ' 는 f-stirng
+
+print(f'밑은 {base_num}, 지수는 {exponent_num}, 결과값은 {pow(base_num, exponent_num)}')
+
+# format function
+print('밑은 {0}, 지수는 {1}, 결과값은 {2}'.format(base_num,exponent_num, pow(base_num, exponent_num)))
+print('밑은 {}, 지수는 {}, 결과값은 {}'.format(base_num,exponent_num, pow(base_num, exponent_num)))
+
+# c like
+print('밑은 %d, 지수는 %d, 결과 값은 %d' %(base_num, exponent_num, pow(base_num, exponent_num)))
+# d : 십진수를 의미, f로 쓰면 float을 의미함
